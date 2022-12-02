@@ -10,5 +10,21 @@ router.get("/", function (req, res) {
 	message: "Hello from users!",
 	});
 });
+/*
+@ end point:/api/users/register 
+method:POST
+description: to registerr the user with the specified deatails
+register: we are going to ceate a new user 
+new entity: post method from http protocol
+
+
+*/
+router.post("/register",(req,res)=> {
+	console.log(req.headers);
+	console.log(JSON.stringify(req.body));
+	res.status(201).json({
+	message: "Register post called successfully",
+	});
+});
 
 module.exports = router; 

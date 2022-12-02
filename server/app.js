@@ -8,6 +8,10 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.json());
+// express.json : will take care of parsing content into json format
+
+
 // define the routes
 app.use("/api/users",require("./routes/api/users"));
 app.use("/api/profile",require("./routes/api/profile"));
