@@ -5,12 +5,12 @@ console.log("hello from mars");
 
 const express = require("express");
 // we have loaded the express module.
+const connectDB= require("./config/db");
 
 const app = express();
-
+connectDB();
 app.use(express.json());
 // express.json : will take care of parsing content into json format
-
 
 // define the routes
 app.use("/api/users",require("./routes/api/users"));
