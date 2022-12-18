@@ -7,7 +7,8 @@ const secret ="jwtSecret";
 // next: next handler/callback.
 module.exports=(req,res,next) => {
     console.log("hello from auth middleware");
-// get the token
+    
+    // get the token
 const token=req.header("x-auth-token");
 // header:x-auth-token.
 console.log(token);
