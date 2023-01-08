@@ -14,11 +14,11 @@ const profileSchema = new mongoose.Schema ({
     bio:{type: String},
     githubusername:{type:String},
     // exp: multiple entries of exps
-    expersience :[
-        {title: {type:String, requierd:true},
-        company:{type: String,requierd:true},
+    experience :[
+        {title: {type:String, required:true},
+        company:{type: String,required:true},
         location:{type:String},
-        from:{type:Date, requierd:true},
+        from:{type:Date, required:true},
         to: {
             type: Date,
           },
